@@ -38,3 +38,7 @@ Place autoinstall.yaml into root folder for installation
 │
 ├───autoinstall.yaml
 ```
+
+
+
+For additional configuration you could use https://canonical-subiquity.readthedocs-hosted.com/en/latest/reference/autoinstall-reference.html
