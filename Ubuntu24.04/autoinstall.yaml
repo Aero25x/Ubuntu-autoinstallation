@@ -1,0 +1,25 @@
+autoinstall: # autoinstall config file for Ubuntu 24.04 for ease and fast installtation wthour manual work
+    version: 1
+    identity:
+        hostname: ubuntuinstallation
+        username: administrator
+        password: "$6$lbdZtH9.LAZc38uP$Mk3TRk4KAVA1IXaqn" # Hash password
+        realname: administrator
+    
+    storage:
+        layout:
+            name: lvm # DEFAULT
+            sizing-policy: all # Use the whole disk
+            password: "LUKS PASSWORD" # When this is specified, the installer sets up full-disk encryption with this passphrase on the target system.
+        keyboard: # Sets the keyboard layout (DEFAULT)
+            layout: "us" # For example, US English (DEFAULT)
+            variant: "" # Sets the variant of the specified layout (if applicable) (DEFAULT)
+        locale: "en_US.UTF-8" # Sets the locale for the installed system. For example, US English with UTF-8 character encoding (DEFAULT).
+        timezone: "Etc/UTC" # Specifies the timezone. Default is "Etc/UTC", but this should be set to your local timezone.
+        refresh-installer: # Controls whether the installer updates to a new version before continuing, and if "true", which channel the update is downloaded from
+            update: true # Update the installer before proceeding with installation; Can be either true or false
+            channel: "stable/ubuntu-$REL" # Update from the stable channel (DEFAULT)
+        source: # Specifies the variant of Ubuntu to be installed
+            id: ubuntu-desktop
+    
+    shutdown: reboot
