@@ -13,7 +13,7 @@
 autoinstall config file for Ubuntu 24.04 for ease and fast installtation wthour manual work
 
 Place autoinstall.yaml into root folder for installation
-
+```
 ├───[boot]
 ├───.disk
 ├───boot
@@ -37,3 +37,4 @@ Place autoinstall.yaml into root folder for installation
 ├───install
 │
 ├───autoinstall.yaml
+```
